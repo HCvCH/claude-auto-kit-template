@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 448" width="900" height="448" role="img" aria-labelledby="t d">
+  <title id="t">How claude-auto-kit works</title>
+  <desc id="d">Save a reel, post or screenshot to mymind. A scheduled Claude task reads the new items and sorts them by the tool or skill they show. Open-license skills are copied into your repo, checklists and prompts are rewritten as skills, plugins, MCP servers and CLI tools become install commands in the weekly report, and irrelevant or duplicate items are skipped with a note. New skills are added to project-pipeline and opened as a pull request. You merge it, and Claude Code auto-updates the plugin on your PC.</desc>
+  <style>
+    .card { fill: #f6f1e7; }
+    .box  { fill: #fffcf5; stroke: #2b2620; stroke-width: 1.25; }
+    .acc  { fill: #fffcf5; stroke: #b5461b; stroke-width: 1.5; }
+    .accf { fill: #f8e3d6; stroke: #b5461b; stroke-width: 1.5; }
+    .skip { fill: none; stroke: #9c9284; stroke-width: 1.25; stroke-dasharray: 4 4; }
+    .ink  { fill: none; stroke: #5c554b; stroke-width: 1.25; }
+    .red  { fill: none; stroke: #b5461b; stroke-width: 1.5; }
+    .hi   { fill: #5c554b; }
+    .hr   { fill: #b5461b; }
+    .main { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif; font-size: 16px; fill: #1d1a16; }
+    .dim  { fill: #7d7468; }
+    .tag  { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 11.5px; fill: #7d7468; }
+    .tagr { fill: #b5461b; }
+    .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 14.5px; fill: #1d1a16; }
+  </style>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="hi" d="M0 1 L9 5 L0 9 z"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="hr" d="M0 1 L9 5 L0 9 z"/></marker>
+  </defs>
+
+  <rect class="card" x="0" y="0" width="900" height="448" rx="14"/>
+
+  <!-- Row 1 -->
+  <rect class="box" x="24" y="24" width="236" height="88" rx="3"/>
+  <text class="tag" x="42" y="48">01 capture</text>
+  <text class="main" x="42" y="74">Save a reel, post or</text>
+  <text class="main" x="42" y="96">screenshot to mymind</text>
+
+  <rect class="box" x="332" y="24" width="236" height="88" rx="3"/>
+  <text class="tag" x="350" y="48">02 weekly check</text>
+  <text class="main" x="350" y="74">A scheduled Claude task</text>
+  <text class="main" x="350" y="96">reads the new items</text>
+
+  <rect class="box" x="640" y="24" width="236" height="88" rx="3"/>
+  <text class="tag" x="658" y="48">03 sort</text>
+  <text class="main" x="658" y="74">Which tool or skill</text>
+  <text class="main" x="658" y="96">does the post show?</text>
+
+  <path class="ink" d="M260 68 H324" marker-end="url(#a)"/>
+  <path class="ink" d="M568 68 H632" marker-end="url(#a)"/>
+
+  <!-- Branch -->
+  <path class="ink" d="M758 112 V152"/>
+  <path class="ink" d="M122 152 H780"/>
+  <path class="red" d="M122 152 V192" marker-end="url(#r)"/>
+  <path class="red" d="M341 152 V192" marker-end="url(#r)"/>
+  <path class="ink" d="M560 152 V192" marker-end="url(#a)"/>
+  <path class="ink" d="M780 152 V192" marker-end="url(#a)"/>
+
+  <!-- Row 2 -->
+  <rect class="acc" x="24" y="200" width="196" height="92" rx="3"/>
+  <text class="tag tagr" x="40" y="224">skill, open license</text>
+  <text class="main" x="40" y="250">Copied into</text>
+  <text class="main" x="40" y="272">your repo</text>
+
+  <rect class="acc" x="243" y="200" width="196" height="92" rx="3"/>
+  <text class="tag tagr" x="259" y="224">checklist or prompt</text>
+  <text class="main" x="259" y="250">Rewritten as</text>
+  <text class="main" x="259" y="272">a skill</text>
+
+  <rect class="box" x="462" y="200" width="196" height="92" rx="3"/>
+  <text class="tag" x="478" y="224">plugin, MCP, CLI</text>
+  <text class="main" x="478" y="250">Install command in</text>
+  <text class="main" x="478" y="272">the weekly report</text>
+
+  <rect class="skip" x="681" y="200" width="196" height="92" rx="3"/>
+  <text class="tag" x="697" y="224">off-topic, duplicate</text>
+  <text class="main dim" x="697" y="250">Skipped, with</text>
+  <text class="main dim" x="697" y="272">a short note</text>
+
+  <!-- Merge -->
+  <path class="red" d="M122 292 V322 H341 V292"/>
+  <path class="red" d="M231 322 V344" marker-end="url(#r)"/>
+
+  <!-- Row 3 -->
+  <rect class="accf" x="111" y="352" width="240" height="72" rx="3"/>
+  <text class="tag tagr" x="129" y="375">04 wire up</text>
+  <text class="main" x="129" y="404">Added to <tspan class="code">project-pipeline</tspan></text>
+
+  <path class="red" d="M351 388 H454" marker-end="url(#r)"/>
+
+  <rect class="accf" x="462" y="352" width="415" height="72" rx="3"/>
+  <text class="tag tagr" x="480" y="375">05 review and use</text>
+  <text class="main" x="480" y="404">Merge the weekly PR, the plugin auto-updates</text>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "name": "auto-kit",
+  "description": "Self-updating skill kit: project-pipeline plus skills collected by a weekly automated check.",
+  "author": {
+    "name": "your-github-username"
+  },
+  "repository": "https://github.com/your-github-username/your-repo",
+  "license": "CC-BY-NC-SA-4.0"
+}

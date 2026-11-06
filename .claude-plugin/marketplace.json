@@ -1,0 +1,14 @@
+{
+  "name": "auto-kit",
+  "description": "Your own self-updating Claude Code skill kit, filled weekly from posts you save to mymind.",
+  "owner": {
+    "name": "your-github-username"
+  },
+  "plugins": [
+    {
+      "name": "auto-kit",
+      "source": "./plugins/auto-kit",
+      "description": "Self-updating skill kit: project-pipeline plus skills collected by a weekly automated check."
+    }
+  ]
+}
